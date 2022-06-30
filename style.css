@@ -46,6 +46,9 @@ span{
     display: inline-block;
     padding: 10px 25px;
 }
+.navbar ul li a.active{
+    color: #f9004d;
+}
 .navbar ul li a{
     color: white;
     text-decoration: none;
@@ -122,8 +125,10 @@ section{
 }
 .about{
     font-family: 'Poppins', sans-serif;
+    background-color: #191919;
 }
 .about .title{
+    color: white;
     position: relative;
     text-align: center;
     margin-bottom: 60px;
@@ -139,7 +144,7 @@ section{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: white;
     transform: translateX(-50%);
 }
 .about .title::after{
@@ -150,7 +155,7 @@ section{
     color: #f9004d;
     font-size: 20px;
     padding: 5px;
-    background: #fff;
+    background: #191919;
     transform: translateX(-50%);
 }
 .about .about-content{
@@ -172,11 +177,13 @@ section{
     width: 55%;
 }
 .about .about-content .right .text{
+    color: white;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .about .about-content .right p{
+    color: white;
     text-align: justify;
 }
 .about .about-content .right a{
@@ -234,6 +241,9 @@ section{
         margin: 20px 0;
         font-size: 25px;
     }
+    .navbar ul li a.active{
+        color: #f9004d;
+}
     h1{
     color: white;
     font-size: 70px;
@@ -289,4 +299,8 @@ section{
         padding: 10px 30px;
     }
 }
-
+@media(max-width: 516px){
+    .max-width{
+        width: 330px;
+    }
+}
