@@ -299,8 +299,3 @@ section{
         padding: 10px 30px;
     }
 }
-@media(max-width: 516px){
-    .max-width{
-        width: 330px;
-    }
-}
