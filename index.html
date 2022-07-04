@@ -10,6 +10,9 @@
         
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,7 +47,8 @@
     <!-- section about -->
     <section class="page-section about" id="about">
         <div class="max-width">
-            <h2 class="title">About Me</h2>
+            <!-- <h2 class="title">About Me</h2> -->
+            <h2 class="section-heading" data-outline="About Me">About Me</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/fb.jpg" alt="">
@@ -62,26 +66,67 @@
     </section>
 
     <!-- section project start -->
-    <section class="project" id="project">
-        <div class="max-width">
-            <h2 class="title">Project</h2>
-            <div class="project-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text"></div>
+    <section class="projects" id="projects">
+    <div class="container">
+        <h2 class="section-heading" data-outline="Projects">Projects</h2>
+        <div class="all-items">
+            <div class="item">
+                <div class="left">
+                    <div class="img">
+                    <img src="./images/nana.png" alt="">
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Nanang and i'm a <span>backend web developer</span></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sagittis mi. Sed eget nisl urna. Vestibulum convallis dictum placerat. 
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum et lacus non neque varius tincidunt. Curabitur libero ante, 
-                    suscipit non lacinia in, dapibus aliquet lectus. Quisque vehicula, ipsum sit amet mollis mattis, metus sapien fermentum purus, 
-                    nec varius tellus nibh non eros.</p>
-                <a href="#">Download CV</a>
+                <div class="right">
+                <h2 class="project-title">Real Chat</h2>
+                <h3 class="project-sub-title">Online real time chat app.</h3>
+                <p class="project-desc">I made this application for a USA customer. This application is truly Amazing. Here
+                    you can chat with your friend
+                    constantly inside a secure environment and there will be no information reserved after the end of the
+                    session.</p>
+                    <div class="buttons">
+                        <a style="margin-right: 0; margin-left: auto;" href="#" class="primary-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="img">
+                        <img src="./images/nana.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                <h2 class="project-title">Hotel Zaman Website
+                </h2>
+                <h3 class="project-sub-title">A website for hotel zaman.
+                </h3>
+                <p class="project-desc">Hotel zaman is one of the famous hotel in Chittagong. We created their website. The
+                client wanted a clean and smooth
+                design which I was able to provide at the end of the project.</p>
+                <div class="buttons">
+                <a style="margin-right: 0; margin-left: auto;" href="#" class="primary-btn">Know More</a>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="img">
+                        <img src="./images/nana.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                <h2 class="project-title">Prinazz Website</h2>
+                <h3 class="project-sub-title">A website for music studio</h3>
+                <p class="project-desc">Piranz is one of the famous music composer in UAE. The challenge was to keep the
+                music environment in the web. It was
+                hard but in the end
+                we provided a good quality website that satisfied the client.</p>
+                <div class="buttons">
+                <a style="margin-right: 0; margin-left: auto;" href="#" class="primary-btn">Know More</a>
+                </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 </body>
 </html>

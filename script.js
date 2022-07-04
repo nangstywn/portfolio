@@ -1,3 +1,4 @@
+const scrollButton = document.querySelector(".scroll-top");
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
@@ -64,3 +65,16 @@ var typed = new Typed('.typing', {
     backSpeed: 60,
     loop: true
 });
+
+if(scrollButton){
+    window.addEventListener('scroll', ()=> {
+        if(pageYOffset > (window.innerHeight * 1.2)){
+        scrollButton.style.display="flex";
+        }else{
+        scrollButton.style.display="none";
+        }
+    });
+    scrollButton.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+    });
+}
