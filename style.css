@@ -257,7 +257,7 @@ section{
         padding: 10px 30px;
     }
     .max-width{
-        max-width: 800px;
+        max-width: 900px;
     }
     .about .about-content .column{
         width: 50%;
@@ -297,5 +297,20 @@ section{
     .content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+}
+@media(max-width: 514px){
+    .max-width{
+        flex: 100%;
+        padding: 0px;
+        margin: 0px;
+        width: 320px;
+    }
+    .about .about-content{
+        flex: 100%;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
     }
 }
