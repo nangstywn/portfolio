@@ -24,7 +24,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
     if ($('.navbar').hasClass("sticky")) {
         $('.navbar ul li a').removeAttr('style');
-        $('.active').css('color','black')
+        $('.active').css('color','#f9004d')
     }else{
         $('.active').css('color','#f9004d')
     }

@@ -241,15 +241,15 @@ section{
     .navbar ul li a{
         display: inline-block;
         margin: 5px 0;
-        font-size: 60px;
+        font-size: 30px;
     }
     .navbar ul li a::after{
         content: attr(data-text);
         pointer-events: none;
         position: absolute;
         width: 100%;
-        right: -170px;
-        bottom: 45%;
+        right: -120px;
+        bottom: 55%;
         color: transparent;
         -webkit-text-stroke: 1.5px #afadad25;
         opacity: 0;
@@ -258,10 +258,12 @@ section{
         transform: rotate(90deg) scale(3);
         transition: 0.3s ease;
         transition-property: opacity, transform;
+        
     }
-    .navbar ul li a:hover::after{
+    .navbar ul li a.active::after{
         opacity: 1;
         transform: scale(3) translateY(10px) rotate(90deg);
+        
     }
     .navbar ul li a.active{
         color: #f9004d;
@@ -322,7 +324,7 @@ section{
     }
 }
 @media(max-width: 514px){
-    .max-width{
+    /* .max-width{
         flex: 100%;
         padding: 0px;
         margin: 0px;
@@ -334,5 +336,5 @@ section{
         align-items: center;
         justify-content: center;
         margin: 0;
-    }
+    } */
 }
