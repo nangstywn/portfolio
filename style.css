@@ -226,20 +226,42 @@ section{
         left: -100%;
         top: 0;
         background: #111;
-        text-align: center;
-        padding-top: 80px;
+        text-align: left;
+        padding-top: 150px;
         transition: all 0.3s ease;
     }
+    
     .navbar ul.active{
         left: 0;
     }
     .navbar ul li{
         display: block;
+        margin-left: 100px;
     }
     .navbar ul li a{
         display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        margin: 5px 0;
+        font-size: 60px;
+    }
+    .navbar ul li a::after{
+        content: attr(data-text);
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        right: -170px;
+        bottom: 45%;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #afadad25;
+        opacity: 0;
+        z-index: -1;
+        text-align: center;
+        transform: rotate(90deg) scale(3);
+        transition: 0.3s ease;
+        transition-property: opacity, transform;
+    }
+    .navbar ul li a:hover::after{
+        opacity: 1;
+        transform: scale(3) translateY(10px) rotate(90deg);
     }
     .navbar ul li a.active{
         color: #f9004d;
