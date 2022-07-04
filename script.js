@@ -22,42 +22,53 @@ $(document).ready(function(){
         $('.navbar ul li a').removeAttr('style');
         $(this).addClass('active');
     });
-    // $(window).scroll(function(){
-    // if ($('.navbar').hasClass("sticky")) {
-    //     $('.navbar ul li a').removeAttr('style');
-    //     $('.active').css('color','#f9004d')
-    // }else{
-    //     $('.active').css('color','#f9004d')
-    // }
-    // })
+    $('.menu-btn').click(function(){
+        $(this).data('clicked', true)
+    });
+    $(window).scroll(function(){
+    if ($('.navbar').hasClass("sticky")) {
+        $('.navbar ul li a').removeAttr('style');
+        if($('.menu-btn').data('clicked')){
+        $('.active').css('color','#f9004d')
+        }else{
+        $('.active').css('color','black')
+        }
+    }else{
+        $('.active').css('color','#f9004d')
+    }
+    })
 });
-$(document).ready(function() {
-		$('a[href*=#]').bind('click', function(e) {
-				e.preventDefault(); // prevent hard jump, the default behavior
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
 
-				var target = $(this).attr("href"); // Set the target as variable
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
 
-				// perform animated scrolling by getting top-position of target-element and set it as scroll target
-				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
-				}, 600, function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
-				return false;
-		});
-});
-
-$(window).scroll(function() {
-		var scrollDistance = $(window).scrollTop();
-	
-		// Assign active class to nav links while scolling
-		$('.page-section').each(function(i) {
-				if ($(this).position().top <= scrollDistance) {
-						$('.navbar a.active').removeClass('active');
-						$('.navbar a').eq(i).addClass('active');
-				}
-		});
-}).scroll()
+function navHighlighter() {
+  
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+  
+  // Now we loop through sections to get height, top and ID values for each
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
+    
+    /*
+    - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+    */
+    if (
+        scrollY > sectionTop &&
+        scrollY <= sectionTop + sectionHeight
+        ){
+        document.querySelector(".navbar a[href*=" + sectionId + "]").classList.add("active");
+        } else {
+        document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("active");
+        }
+    });
+}
 
 var typed = new Typed('.typing', {
     strings: ['Backend Web Developer', 'Programmer'],
