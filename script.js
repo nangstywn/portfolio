@@ -21,14 +21,14 @@ $(document).ready(function(){
         $('.navbar ul li a').removeAttr('style');
         $(this).addClass('active');
     });
-    $(window).scroll(function(){
-    if ($('.navbar').hasClass("sticky")) {
-        $('.navbar ul li a').removeAttr('style');
-        $('.active').css('color','#f9004d')
-    }else{
-        $('.active').css('color','#f9004d')
-    }
-    })
+    // $(window).scroll(function(){
+    // if ($('.navbar').hasClass("sticky")) {
+    //     $('.navbar ul li a').removeAttr('style');
+    //     $('.active').css('color','#f9004d')
+    // }else{
+    //     $('.active').css('color','#f9004d')
+    // }
+    // })
 });
 $(document).ready(function() {
 		$('a[href*=#]').bind('click', function(e) {

@@ -227,7 +227,7 @@ section{
         top: 0;
         background: #111;
         text-align: left;
-        padding-top: 150px;
+        padding-top: 100px;
         transition: all 0.3s ease;
     }
     
@@ -236,7 +236,7 @@ section{
     }
     .navbar ul li{
         display: block;
-        margin-left: 100px;
+        margin-left: 60px;
     }
     .navbar ul li a{
         display: inline-block;
@@ -248,8 +248,8 @@ section{
         pointer-events: none;
         position: absolute;
         width: 100%;
-        right: -120px;
-        bottom: 55%;
+        right: -100px;
+        bottom: 64%;
         color: transparent;
         -webkit-text-stroke: 1.5px #afadad25;
         opacity: 0;
