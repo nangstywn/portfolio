@@ -12,11 +12,11 @@ img {
 	width: 100%;
 	height: 100%;
 }
-/* section {
+section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-} */
+}
 .container {
 	width: 90%;
 	margin: 0 auto;
