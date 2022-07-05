@@ -30,7 +30,7 @@ img {
 	letter-spacing: 0.2rem;
 	text-align: center;
 	position: relative;
-	margin-bottom: 10rem;
+	margin-bottom: 8rem;
     color: #fff;
     z-index: 1;
 }
@@ -60,36 +60,6 @@ img {
 
 
 /* scroll Top/Up Button */
-.scroll-top {
-	z-index: 100;
-	height: 60px;
-	width: 60px;
-	background-color: white;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	cursor: pointer;
-	border-radius: 6px;
-	box-shadow: 0px 0px 20px rgba(71, 40, 182, 0.226);
-	/* hover effect default */
-	transform: scale(0.9);
-	transition: 0.3s ease-in-out transform;
-	/* for centering the icon */
-	/* display: flex; */
-	display: none;
-	align-items: center;
-	justify-content: center;
-}
-.scroll-top svg {
-	width: 50%;
-	color: black;
-	pointer-events: none;
-}
-
-.scroll-top:hover {
-	transform: scale(1);
-}
-
 .hero{
     height: 100vh;
     width: 100%;
@@ -294,7 +264,8 @@ h4{
 
 /* project section style */
 .projects{
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 2px;
     /* background-color: #000; */
     background-color: #212020;
 }
@@ -715,9 +686,9 @@ footer span a:hover{
     }
 }
 @media(max-width: 550px){
-    .max-width{
+    /* .max-width{
         padding: 0 23px;
-    }
+    } */
     h1{
     color: white;
     font-size: 50px;
@@ -750,6 +721,9 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .section-heading{
+        font-size: 60px;
     }
 }
 @media(max-width: 514px){
