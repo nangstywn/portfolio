@@ -179,37 +179,6 @@ h4{
     background-color: #191919;
     padding: 100px;
 }
-.about .title{
-    color: white;
-    position: relative;
-    text-align: center;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-}
-.about .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: white;
-    transform: translateX(-50%);
-}
-.about .title::after{
-    content: "who am i";
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    color: #f9004d;
-    font-size: 20px;
-    padding: 5px;
-    background: #191919;
-    transform: translateX(-50%);
-}
 .about .about-content{
     display: flex;
     flex-wrap: wrap;
@@ -368,9 +337,6 @@ h4{
     padding: 100px;
 }
 
-.skills .title::after{
-    content: "what i know";
-}
 .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -460,9 +426,6 @@ h4{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}
-.contact .title::after{
-    content: "get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -683,6 +646,23 @@ footer span a:hover{
     .content a{
         font-size: 20px;
         padding: 9px 25px;
+    }
+    .projects .item{
+        flex-direction: column;
+    }
+    .projects .item .left{
+        width: 100%;
+    }
+    .projects .item .right{
+        width: 90%;
+        margin-left: 0;
+        margin-top: -150px;
+    }
+    .projects .item:nth-child(even){
+        flex-direction: column;
+    }
+    .projects .item:nth-child(even) .left{
+        margin-left: 0;
     }
 }
 @media(max-width: 550px){
