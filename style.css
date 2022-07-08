@@ -25,6 +25,7 @@ section {
 .section-heading {
 	/* font-size: clamp(2rem, 10vw, 8rem); */
     font-size: 80px;
+    width: 100%;
 	text-transform: uppercase;
 	font-family: 'Montserrat';
 	letter-spacing: 0.2rem;
@@ -173,7 +174,7 @@ h4{
     line-height: 22px;
 }
 
-
+/* about section styling */
 .about{
     font-family: 'Poppins', sans-serif;
     background-color: #191919;
@@ -332,9 +333,9 @@ h4{
 /* skills section styling */
 
 .skills{
-    font-family: 'roboto mono', sans-serif;
     background-color: #191919;
     padding: 100px;
+    font-family: 'roboto mono', sans-serif;
 }
 
 .skills .skills-content{
@@ -355,22 +356,6 @@ h4{
 .skills .skills-content .left p{
     text-align: justify;
     color: white;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: crimson;
-    background: none;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -419,7 +404,7 @@ h4{
 .contact{
     background-color: #212020;
     padding: 100px;
-    font-family: roboto mono;
+    font-family: 'roboto mono';
 }
 .contact .contact-content{
     display: flex;
@@ -534,6 +519,21 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+.t-row{
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.f-right ul li a{
+    color: #f9004d;
+    font-size: larger;
+}
+.f-right ul li{
+    display: inline-block;
+    padding: 0 10px;
 }
 
 
@@ -720,4 +720,7 @@ footer span a:hover{
         justify-content: center;
         margin: 0;
     } */
+    .max-width{
+        max-width: 900px;
+    }
 }
