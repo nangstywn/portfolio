@@ -508,17 +508,19 @@ h4{
 }
 /* footer section styling */
 footer{
-    background: #111;
+    background: #f9004d;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+    font-family: 'roboto mono';
+    color: white;
 }
 footer span a{
-    color: crimson;
+    color: white;
     text-decoration: none;
 }
-footer span a:hover{
-    text-decoration: underline;
+footer span{
+    color: white;
 }
 .t-row{
     margin: 0 20px;
@@ -528,8 +530,9 @@ footer span a:hover{
     justify-content: space-between;
 }
 .f-right ul li a{
-    color: #f9004d;
+    color: white;
     font-size: larger;
+    text-decoration: none;
 }
 .f-right ul li{
     display: inline-block;
